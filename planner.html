@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Planner - Fatima Hamisu Burah</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <span class="logo-text">Fatima.dev</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="planner.html" class="active">Academic Planner</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Interactive Academic Planner</h1>
+            <p>Manage your coursework, assignments, and daily study tasks efficiently.</p>
+        </div>
+    </section>
+
+    <!-- Planner Section -->
+    <section class="planner-section">
+        <div class="container planner-container">
+            <div class="planner-card">
+                <h2><i class="fas fa-calendar-check"></i> My Study & Task Manager</h2>
+                <p class="planner-instructions">Add your academic tasks or project deliverables below. You can mark them as completed or delete them.</p>
+                
+                <div class="task-input-group">
+                    <input type="text" id="taskInput" placeholder="Enter a new academic task (e.g., COS 106 Lab Submission)...">
+                    <input type="date" id="taskDate">
+                    <button id="addTaskBtn" class="btn primary-btn"><i class="fas fa-plus"></i> Add Task</button>
+                </div>
+
+                <div class="task-filter-group">
+                    <button class="filter-btn active" data-filter="all">All Tasks</button>
+                    <button class="filter-btn" data-filter="pending">Pending</button>
+                    <button class="filter-btn" data-filter="completed">Completed</button>
+                </div>
+
+                <div class="task-list-wrapper">
+                    <ul id="taskList">
+                        <!-- Dynamic tasks will be inserted here by JavaScript -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Fatima Hamisu Burah. MIVA Open University COS 106 Term Project.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
