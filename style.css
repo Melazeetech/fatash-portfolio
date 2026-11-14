@@ -123,6 +123,15 @@ header {
 }
 
 /* Hero Section */
+
+.profile-avatar {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover;   /* Prevents distortion */
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
 .hero {
     padding: 80px 0;
     background: linear-gradient(135deg, #f0f4ff 0%, #e0e7ff 100%);
